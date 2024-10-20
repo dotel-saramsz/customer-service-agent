@@ -1,0 +1,19 @@
+{
+  "name": "issue_refund",
+  "description": "Initiates a refund for a customer's order. Call this only if the customer expresses clear dissatisfaction and wants a refund. Refunds can be initiated only for refundable items. Check if an item is refundable by calling get_order_details.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "order_id": {
+        "type": "string",
+        "description": "The customer's order ID."
+      },
+      "reason_for_refund": {
+        "type": "string",
+        "description": "The reason for refund."
+      }
+    },
+    "required": ["order_id"],
+    "additionalProperties": false
+  }
+}

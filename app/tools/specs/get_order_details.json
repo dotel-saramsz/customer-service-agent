@@ -1,0 +1,15 @@
+{
+  "name": "get_order_details",
+  "description": "Get the details about a customer's order. Call this when you want to know the items ordered, price of the items, date when order was placed, current status of order or its estimated delivery date",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "order_id": {
+        "type": "string",
+        "description": "The customer's order ID."
+      }
+    },
+    "required": ["order_id"],
+    "additionalProperties": false
+  }
+}

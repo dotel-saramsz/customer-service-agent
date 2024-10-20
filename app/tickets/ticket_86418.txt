@@ -1,0 +1,5 @@
+Ticket ID: 86418
+Order ID: 5678
+Reason for escalation: Customer has not received the delivered Monitor.
+Customer Email: saramsha@naamche.com
+Customer Phone: 9843495493

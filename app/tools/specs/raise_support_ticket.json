@@ -1,0 +1,27 @@
+{
+  "name": "raise_support_ticket",
+  "description": "Raise a ticket in the company's internal ticket mgmt system. Call this when you need to escalate an issue to the support team. Ask for the customer's email and phone number so that the support team can contact the customer first if you don't have it",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "order_id": {
+        "type": "string",
+        "description": "The customer's order ID."
+      },
+      "email": {
+        "type": "string",
+        "description": "The customer's email address."
+      },
+      "phone": {
+        "type": "string",
+        "description": "The customer's phone number."
+      },
+      "reason_for_escalation": {
+        "type": "string",
+        "description": "The issue that the customer is facing and why it has been escalated."
+      }
+    },
+    "required": ["order_id", "email", "reason_for_escalation"],
+    "additionalProperties": false
+  }
+}
