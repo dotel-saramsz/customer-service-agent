@@ -1,7 +1,7 @@
 from openai import OpenAI
 from config import openai_api_key, openai_org_id, openai_project_id
 from tools.definitions import tools_specs
-from app.tools.action_server import execute_tool_function
+from tools.action_server import execute_tool_function
 
 client = OpenAI(
     api_key=openai_api_key, organization=openai_org_id, project=openai_project_id
