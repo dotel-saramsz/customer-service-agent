@@ -1,0 +1,5 @@
+Ticket ID: 56765
+Order ID: 5678
+Reason for escalation: Customer has not received the delivered item.
+Customer Email: user@example.com
+Customer Phone: 1234567890

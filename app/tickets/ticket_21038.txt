@@ -1,0 +1,5 @@
+Ticket ID: 21038
+Order ID: 5678
+Reason for escalation: The item received is defective and cannot be refunded.
+Customer Email: saramsha@naamche.com
+Customer Phone: 984323422

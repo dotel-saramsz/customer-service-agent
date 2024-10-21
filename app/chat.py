@@ -1,11 +1,6 @@
-from openai import OpenAI
-from config import openai_api_key, openai_org_id, openai_project_id
 from tools.definitions import tools_specs
 from app.tools.action_server import execute_tool_function
-
-client = OpenAI(
-    api_key=openai_api_key, organization=openai_org_id, project=openai_project_id
-)
+from hooks.oai_hook import oai_client
 
 SYSTEM_PROMPT = """
 You are a customer service chatbot. Your job is to respond to customer queries and help them resolve their issues. You have access to different tools which allow you to
@@ -90,7 +85,7 @@ def get_chatbot_response(user_message: str | None = None):
     # Get the last 5 messages from the chat history
     conversation_messages = message_store.get_messages()
 
-    stream = client.chat.completions.create(
+    stream = oai_client.chat.completions.create(
         model="gpt-4o-mini",
         messages=conversation_messages,
         tools=tools_specs,

@@ -125,9 +125,7 @@ def get_tool_specs():
             filepath = os.path.join(spec_dir, filename)
             with open(filepath, "r") as file:
                 spec = json.load(file)
-                tools_specs.append(
-                    {"type": "function", "function": spec, "strict": True}
-                )
+                tools_specs.append({"type": "function", "function": spec})
 
     return tools_specs
 
